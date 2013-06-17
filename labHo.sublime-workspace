@@ -23,7 +23,7 @@
 			"file": "blurFocus/labBlurFocus.html",
 			"settings":
 			{
-				"buffer_size": 410,
+				"buffer_size": 534,
 				"line_ending": "Windows"
 			}
 		},
@@ -31,7 +31,7 @@
 			"file": "blurFocus/blurFocus.css",
 			"settings":
 			{
-				"buffer_size": 1350,
+				"buffer_size": 1821,
 				"line_ending": "Windows"
 			}
 		},
@@ -39,7 +39,7 @@
 			"file": "blurFocus/blurFocus.js",
 			"settings":
 			{
-				"buffer_size": 220,
+				"buffer_size": 294,
 				"line_ending": "Windows"
 			}
 		}
@@ -255,15 +255,15 @@
 					"file": "blurFocus/labBlurFocus.html",
 					"settings":
 					{
-						"buffer_size": 410,
+						"buffer_size": 534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								410,
-								410
+								0,
+								0
 							]
 						],
 						"settings":
@@ -310,7 +310,7 @@
 							},
 							"gjslint_ignore":
 							[
-								110
+								110.0
 							],
 							"gjslint_options":
 							[
@@ -336,7 +336,7 @@
 							],
 							"pyflakes_ignore_import_*": true,
 							"sublimelinter": true,
-							"sublimelinter_delay": 2,
+							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
 							],
@@ -357,7 +357,8 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -370,15 +371,15 @@
 					"file": "blurFocus/blurFocus.css",
 					"settings":
 					{
-						"buffer_size": 1350,
+						"buffer_size": 1821,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								395,
-								406
+								0,
+								0
 							]
 						],
 						"settings":
@@ -425,7 +426,7 @@
 							},
 							"gjslint_ignore":
 							[
-								110
+								110.0
 							],
 							"gjslint_options":
 							[
@@ -451,7 +452,7 @@
 							],
 							"pyflakes_ignore_import_*": true,
 							"sublimelinter": true,
-							"sublimelinter_delay": 2,
+							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
 							],
@@ -473,7 +474,7 @@
 							},
 							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -487,15 +488,15 @@
 					"file": "blurFocus/blurFocus.js",
 					"settings":
 					{
-						"buffer_size": 220,
+						"buffer_size": 294,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								208,
-								208
+								141,
+								141
 							]
 						],
 						"settings":
@@ -542,7 +543,7 @@
 							},
 							"gjslint_ignore":
 							[
-								110
+								110.0
 							],
 							"gjslint_options":
 							[
@@ -568,7 +569,7 @@
 							],
 							"pyflakes_ignore_import_*": true,
 							"sublimelinter": true,
-							"sublimelinter_delay": 2,
+							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
 							],

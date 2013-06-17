@@ -1,53 +1,60 @@
-.fond{
+.focus {
+    position: relative;
+    width: 1024px; 
+    height: 607px; 
+}
+.fond {
     width: 1024px; 
     height: 607px; 
     position: relative;
+}
+.fond span {
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 1024px; 
+    height: 607px; 
 }
 .logo {
     width: 210px;
     height: 155px;
     position: absolute;
+    left: 418px;
+    top: 316px;
+    z-index: 7;
 }
-/* span.etat0, span.etat1, span.etat2, span.etat3, span.etat4 {
-    opacity: 0;
-    position: absolute; 
-    left: 0; 
-    top: 0; 
-}
- */
-.fond {
+.fondEtat0 {
     background: url(assets/fondEtat0.jpg) no-repeat left top; 
     z-index: 1;
-    opacity: 1;
+    display: block;
 }
-.logo {
+.fondEtat1 {
+    background: url(assets/fondEtat1.jpg) no-repeat left top; 
+    z-index: 2;
+    display: none;
+}
+.fondEtat2 {
+    background: url(assets/fondEtat2.jpg) no-repeat left top; 
+    z-index: 3;
+    opacity: 0;
+}
+.logoEtat0 {
     background: url(assets/logoEtat0.png) no-repeat left top; 
     z-index: 2;
     opacity: 1;
-    left: 418px;
-    top: 316px;
 }
-/* span.etat1 { 
+.logoEtat1 { 
     background: url(assets/logoEtat1.png) no-repeat left top; 
     z-index: 2;
     opacity: 1;
 }
-span.etat2 { 
+.logoEtat2 { 
     background: url(assets/logoEtat2.png) no-repeat left top; 
     z-index: 3;
     opacity: 1;
 }
-span.etat3 {
-    background: url(assets/logoEtat3.png) no-repeat left top; 
-    z-index: 4;
-    opacity: 1;
-}
-span.etat4 {
-    background: url(assets/logoEtat4.png) no-repeat left top; 
-    z-index: 5;
-    opacity: 1;
-}
- */
+
 /* .focus, span { 
     height: 220px; 
     width: 320px; 
