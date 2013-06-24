@@ -1,16 +1,49 @@
-(function($) {
+var blurModule = (function($) {
+	var blur = {},
+		_state = 3,
+		_variation;
 
-	var fond0 = $('.fondEtat0'),
-		fond1 = $('.fondEtat1');
+	function _changeFocus(speed, fn) {
+		$('.logo .state' + _state).fadeIn(speed);
+		$('.back .state' + _state).fadeIn(speed);
+		$('.logo .state' + ( _state - _variation ) ).fadeOut(speed);
+		$('.back .state' + ( _state - _variation ) ).fadeOut(speed, fn);
+	}
 
-	$('.focus').on("mouseover", function(event) {
-		fond0.fadeOut(350);
-		fond1.fadeIn(350);
-	}).on("mouseleave", function() {
-		console.log('out');
-		fond1.fadeOut(350);
-		fond0.fadeIn(350);
-	});
+	blur.focusLogo = function(speed, fn) {
+		if (_state > 1) {
+			_variation = -1;
+			_state = _state + _variation;
+			_changeFocus(speed, fn);
+		} else {
+			console.log('Focus is already on logo');
+		}
+	};
+	blur.focusBack = function(speed, fn) {
+		if (_state < 3) {
+			_variation = 1;
+			_state = _state + _variation;
+			_changeFocus(speed, fn);
+		} else {
+			console.log('Focus is already on back');
+		}
+	};
 
+	return blur;
 
 }(jQuery));
+
+blurModule.focusLogo(700 , function() {
+	blurModule.focusBack(500 , function() {
+		blurModule.focusLogo(400 , function() {
+			blurModule.focusBack(600 , function() {
+				blurModule.focusLogo(300 , function() {
+					blurModule.focusLogo(300 , function() {
+						console.log('end');
+					});
+				});
+			});
+		});
+	});
+});
+
